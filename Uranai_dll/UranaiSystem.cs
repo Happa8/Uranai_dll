@@ -207,7 +207,7 @@ namespace UranaiSystem
 			FuncCalc(nameNumber_1, nameNumber_2);
 		}
 
-		static int ConvertHiraganaToNum(string name)
+		public static int ConvertHiraganaToNum(string name)
 		{
 			name = Regex.Replace(name, @".[ぁゃゎ]", "1");
 			name = Regex.Replace(name, @".ぃ", "2");
@@ -263,7 +263,7 @@ namespace UranaiSystem
 			FuncCalc(nameNumber_1, nameNumber_2);
 		}
 
-		static void FuncCalc(int nameNumber_1, int nameNumber_2)
+		public static void FuncCalc(int nameNumber_1, int nameNumber_2)
 		{
 			//計算
 			double answer = nameNumber_1 + nameNumber_2;
